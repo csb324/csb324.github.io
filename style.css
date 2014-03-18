@@ -1,0 +1,16 @@
+.box {
+	max-height: 200px;
+	min-height: 10px;
+	border: 1px black solid;
+	display: inline-block;
+}
+
+.col1, .col3 {
+	max-width: 200px;
+	width: 20%;
+}
+
+.col2 {
+	max-width: 400px;
+	width: 40%;
+}
