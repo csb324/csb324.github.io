@@ -2,32 +2,72 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery.js"></script>
 </head>
 <body>
 
 <div id="content">
-	<div class="box row1 col1">
-		<h1>Clara Beyer</h1>
+	<div class="column" id="firstcolumn">
+		<div class="box row1 col1">	
+			<h1>Clara Beyer</h1>	
+		</div>
+		
+		<div class="box row2 col1">
+			<div class="boxtitle">
+				<h2>contact me</h2>
+			</div>
+		</div>
+		
+		<div class="box row3 col1">
+			<!-- this will be some picture with a caption -->
+		</div>
 	</div>
-	<div class="box row1 col2">
+
+	<div class="column" id="secondcolumn">
+
+		<div class="box row1 col2">
+			<div class="boxtitle">
+				<h2>experience</h2>
+			</div>
+		</div>
+
+		<div class="box row2 col2">
+			<!-- here is a picture of me in Friendsville, West Virginia :) -->
+		</div>
+
+		<div class="box row3 col2">
+			<!-- this is where the image slider will go -->
+		</div>
+
 	</div>
-	<div class="box row1 col3">
-	</div>
-	<div class="box row2 col1">
-	</div>
-	<div class="box row2 col2">
-	</div>
-	<div class="box row2 col3">
-	</div>
-	<div class="box row3 col1">
-	</div>
-	<div class="box row3 col2">
-	</div>
-	<div class="box row3 col3">
-		<h2>resources</h2>
-		<a href="http://stackoverflow.com/questions/2648733/make-a-div-square-when-there-is-a-dynamically-changing-width-based-on-percenta">How to make perfectly square divs</a>
+
+	<div class="column" id="thirdcolumn">
+
+		<div class="box row1 col3">
+			<!-- this shall be a picture of something with a caption -->
+		</div>
+
+		<div class="box row2 col3">
+			<div class="boxtitle">
+				<h2>education</h2>
+			</div>
+
+		</div>
+
+		<div class="box row3 col3">
+			<div class="boxtitle">
+				<h2>resources</h2>
+			</div>
+			<a href="http://stackoverflow.com/questions/2648733/make-a-div-square-when-there-is-a-dynamically-changing-width-based-on-percenta">How to make perfectly square divs</a>
+		</div>
+
 	</div>
 </div>
 
+<script>
+
+$('.box').height($('#firstcolumn').width());
+
+</script>
 </body>
 </html>

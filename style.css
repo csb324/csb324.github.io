@@ -1,16 +1,53 @@
+#content {
+	width: 100%;
+	max-width: 815px;
+	margin: 0 auto;
+}
+
 .box {
-	max-height: 200px;
-	min-height: 10px;
 	border: 1px black solid;
+	display: block;
+	margin: 20px 0;
+	position: relative;
+	width: 100%;
+}
+
+.column {
 	display: inline-block;
+	position: relative;
+	margin: 0 1.2%;
 }
 
-.col1, .col3 {
+#firstcolumn, #thirdcolumn {
 	max-width: 200px;
-	width: 20%;
+	width: 23%;
 }
 
-.col2 {
+#thirdcolumn {
+	float: right;
+}
+
+#firstcolumn {
+	float: left;
+}
+
+#secondcolumn {
 	max-width: 400px;
-	width: 40%;
+	width: 46%;
+}
+
+.box.row2.col2 {
+	background: url('friendsville.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.boxtitle {
+	width: 100%;
+	background: #dbf0b3;
+}
+.boxtitle h2 {
+	margin: 0;
+	padding: 3px;
+	text-align: center;
 }
