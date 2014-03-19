@@ -1,5 +1,28 @@
 body {
 	background: url('linedpaper.png');
+	font-family: 'Raleway', sans-serif;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	margin: 6px;
+}
+
+a {
+	text-decoration: none;
+	color: #fe4365;
+}
+
+a:hover {
+	background: #fe4365;
+	color: #fff;
+}
+
+
+li {
+	margin-bottom: 5px;
+	font-size: 0.9em;
 }
 
 #content {
@@ -8,6 +31,7 @@ body {
 	margin: 0 auto;
 }
 
+/* GRID SETUP */
 .box {
 	/*border: 1px black solid;*/
 	display: block;
@@ -47,17 +71,21 @@ body {
 	background-position: center;
 }
 
+/* some of these boxes have titles! */
 .boxtitle {
 	width: 100%;
-	background: #dbf0b3;
+	height: 40px;
+	background: #FFBDD4;
 }
 .boxtitle h2 {
 	margin: 0;
-	padding: 3px;
-	text-align: center;
+	padding: 0 5px;
 	color: #fff;
+	font-family: 'Cedarville Cursive', cursive;
+	font-weight: normal;
 }
 
+/* THE CAROUSEL */
 #carousel {
 	overflow: hidden;
 }
@@ -78,13 +106,47 @@ body {
 	width: 100%;
 }
 
+/* image captions! */
 .caption {
 	position: absolute;
 	bottom: 20px;
-	background: #fff;
+	background: #fe4365;
+	color: #fff;
 }
 
 .caption h2 {
 	margin: 4px;
-	font-size: 1em;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+
+/******* STYLING SPECIFIC BOXES ********/
+
+/* block one stuff */
+h1 {
+	font-family: 'Cedarville Cursive', cursive;
+	font-weight: normal;
+	font-size: 4em;
+	line-height: 120%;
+	margin: 0;
+	padding: 16px;
+}
+
+.row1.col1 {
+	background: none;
+}
+
+/* block six stuff */
+.row2.col3 ul {
+	text-align: center;
+	font-size: 1.25em;
+}
+
+.row2.col3 li {
+	margin-bottom: 10px;
+}
+
+/* block nine stuff */
+.row3.col3 ul {
+	font-size: 0.9em;
 }

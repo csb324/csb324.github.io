@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Raleway|Cedarville+Cursive' rel='stylesheet' type='text/css'>
 	<script src="jquery.js"></script>
 </head>
 <body>
@@ -16,12 +17,18 @@
 			<div class="boxtitle">
 				<h2>contact me</h2>
 			</div>
+			<ul>
+				<li>phone: 703 473 3719</li>
+				<li>email: <a href="mailto:csb324@gmail.com">csb324@gmail.com</a></li>
+				<li>twitter: <a href="http://www.twitter.com/clarabellum">@clarabellum</a></li>
+			</ul>
 		</div>
 		
 		<div class="box row3 col1">
 			<div class="caption">
-				<h2></h2>
+				<h2>fun fact: I love nail art</h2>
 			</div>
+			<img src="nails.jpg" width="100%"/>
 		</div>
 	</div>
 
@@ -29,7 +36,13 @@
 
 		<div class="box row1 col2">
 			<div class="boxtitle">
-				<h2>experience</h2>
+				<h2>accomplishments</h2>
+				<ul>
+					<li>Taught myself enough php, html, and css to build a new layout for <a href="http://post.browndailyherald.com">Post- Magazine's website.</a></li>
+					<li>Created multiple online viral sensations: <a href="http://www.washingtonpost.com/lifestyle/style/taylor-swifts-feminist-doppelganger-takes-off-on-twitter/2013/06/16/d8ac79e6-d691-11e2-a73e-826d299ff459_story.html">Feminist Taylor Swift</a> and <a href="http://newsfeed.time.com/2013/05/06/tumblr-of-the-week-cosmopolitan-magazine-for-marxists/">Cosmarxpolitan.</a></li>
+					<li>Outperformed <a href="http://www.insidepolitics.org/heard/heard32300.html">President George W. Bush</a> on the SATs... as a twelve year old.</li>
+					<li>Owns (but cannot play) a ukelele.</li>
+				</ul>
 			</div>
 		</div>
 
@@ -54,13 +67,19 @@
 
 		<div class="box row1 col3">
 			<div class="caption">
-				<h2></h2>
+				<h2>walking down the street</h2>
 			</div>
+			<img src="face.jpg" width="100%" />
 		</div>
 
 		<div class="box row2 col3">
 			<div class="boxtitle">
 				<h2>education</h2>
+				<ul>
+					<li>The Potomac School</li>
+					<li>International School of Berne</li>
+					<li>Brown University</li>
+				</ul>
 			</div>
 
 		</div>
@@ -87,11 +106,12 @@
 
 <script>
 
+//make the boxes the right ratios etc
 $('.box').height($('#firstcolumn').width());
 
 var imgwidth = ($('#secondcolumn').width()) * -1;
 
-var t = setInterval(function() {
+setInterval(function() {
 	$('#carousel ul').animate({
 		marginLeft:imgwidth
 	}, 
