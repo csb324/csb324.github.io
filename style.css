@@ -137,13 +137,20 @@ h1 {
 }
 
 /* block six stuff */
-.row2.col3 ul {
-	text-align: center;
-	font-size: 1.25em;
+.row2.col3 h3,
+.row2.col3 p {
+	margin: 3px;
 }
 
-.row2.col3 li {
-	margin-bottom: 10px;
+.row2.col3 h3 {
+	font-size: 0.9em;
+	font-weight: normal;
+	margin-top: 8px;
+}
+
+.row2.col3 p {
+	color: #83AF9B;
+	font-size: 0.8em;
 }
 
 /* block nine stuff */

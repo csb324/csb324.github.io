@@ -38,10 +38,15 @@
 			<div class="boxtitle">
 				<h2>accomplishments</h2>
 				<ul>
+
 					<li>Taught myself enough php, html, and css to build a new layout for <a href="http://post.browndailyherald.com">Post- Magazine's website.</a></li>
+
 					<li>Created multiple online viral sensations: <a href="http://www.washingtonpost.com/lifestyle/style/taylor-swifts-feminist-doppelganger-takes-off-on-twitter/2013/06/16/d8ac79e6-d691-11e2-a73e-826d299ff459_story.html">Feminist Taylor Swift</a> and <a href="http://newsfeed.time.com/2013/05/06/tumblr-of-the-week-cosmopolitan-magazine-for-marxists/">Cosmarxpolitan.</a></li>
+
 					<li>Outperformed <a href="http://www.insidepolitics.org/heard/heard32300.html">President George W. Bush</a> on the SATs... as a twelve year old.</li>
+					
 					<li>Owns (but cannot play) a ukelele.</li>
+				
 				</ul>
 			</div>
 		</div>
@@ -74,12 +79,12 @@
 
 		<div class="box row2 col3">
 			<div class="boxtitle">
-				<h2>education</h2>
-				<ul>
-					<li>The Potomac School</li>
-					<li>International School of Berne</li>
-					<li>Brown University</li>
-				</ul>
+				<h2>right now</h2>
+				<h3>Brown University</h3>
+				<p>Concentration: Linguistics</p>
+				<p>GPA: 3.7</p>
+				<h3>Social Media Assistant</h3>
+				<p>for Gail Sheehy, author of <a href="http://www.amazon.com/Passages-Predictable-Crises-Adult-Life/dp/0553271067">Passages</a></p>
 			</div>
 
 		</div>
@@ -109,8 +114,10 @@
 //make the boxes the right ratios etc
 $('.box').height($('#firstcolumn').width());
 
+//Setting a var for the carousel to work right
 var imgwidth = ($('#secondcolumn').width()) * -1;
 
+//The carousel function! 
 setInterval(function() {
 	$('#carousel ul').animate({
 		marginLeft:imgwidth
