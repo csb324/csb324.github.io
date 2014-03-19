@@ -57,3 +57,34 @@ body {
 	text-align: center;
 	color: #fff;
 }
+
+#carousel {
+	overflow: hidden;
+}
+
+#carousel ul {
+	padding: 0;
+	margin: 0;
+	width: 313%;
+}
+
+#carousel ul li {
+	list-style: none;
+	float: left;
+	width: 32%;
+}
+
+#carousel ul li img {
+	width: 100%;
+}
+
+.caption {
+	position: absolute;
+	bottom: 20px;
+	background: #fff;
+}
+
+.caption h2 {
+	margin: 4px;
+	font-size: 1em;
+}

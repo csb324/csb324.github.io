@@ -19,7 +19,9 @@
 		</div>
 		
 		<div class="box row3 col1">
-			<!-- this will be some picture with a caption -->
+			<div class="caption">
+				<h2></h2>
+			</div>
 		</div>
 	</div>
 
@@ -35,8 +37,15 @@
 			<!-- here is a picture of me in Friendsville, West Virginia :) -->
 		</div>
 
-		<div class="box row3 col2">
-			<!-- this is where the image slider will go -->
+		<div class="box row3 col2" id="carousel">
+			<div class="caption">
+				<h2>places i've lived</h2>
+			</div>
+			<ul>
+				<li><img src="alexandria.jpg"></li>
+				<li><img src="bern.jpg"></li>
+				<li><img src="providence.jpg"></li>
+			</ul>
 		</div>
 
 	</div>
@@ -44,7 +53,9 @@
 	<div class="column" id="thirdcolumn">
 
 		<div class="box row1 col3">
-			<!-- this shall be a picture of something with a caption -->
+			<div class="caption">
+				<h2></h2>
+			</div>
 		</div>
 
 		<div class="box row2 col3">
@@ -58,7 +69,17 @@
 			<div class="boxtitle">
 				<h2>resources</h2>
 			</div>
-			<a href="http://stackoverflow.com/questions/2648733/make-a-div-square-when-there-is-a-dynamically-changing-width-based-on-percenta">How to make perfectly square divs</a>
+			<ul>
+				<li>
+					<a href="http://stackoverflow.com/questions/2648733/make-a-div-square-when-there-is-a-dynamically-changing-width-based-on-percenta">How to make perfectly square divs</a>
+				</li>
+				<li>
+					<a href="http://subtlepatterns.com/">Subtle Patterns</a>
+				</li>
+				<li>
+					<a href="http://www.my-html-codes.com/easy-jquery-carousel">This is what you get when you google "easy javascript image carousel"</a>
+				</li>
+			</ul>
 		</div>
 
 	</div>
@@ -67,6 +88,21 @@
 <script>
 
 $('.box').height($('#firstcolumn').width());
+
+var imgwidth = ($('#secondcolumn').width()) * -1;
+
+var t = setInterval(function() {
+	$('#carousel ul').animate({
+		marginLeft:imgwidth
+	}, 
+	1000,
+	function() {
+		$(this).find("li:last").after($(this).find("li:first"));
+		$(this).css({
+			marginLeft:0
+		});
+	})
+}, 6000);
 
 </script>
 </body>
