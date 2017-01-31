@@ -1,136 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Raleway|Cedarville+Cursive' rel='stylesheet' type='text/css'>
-	<script src="jquery.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Clara Beyer</title>
+	
+	<style>
+		body {
+			text-align: center;
+			margin-top: 40vh;
+			font-size: 30px;
+			background-color: #383F51;
+			letter-spacing: 0.03em;
+		}
+		a {
+			color: #BBFF8B;
+			text-decoration: none;
+			border-bottom: 1px solid #BBFF8B;
+			padding-bottom: 2px;
+			display: inline-block;
+		}
+	</style>
 </head>
+
 <body>
-
-<div id="content">
-	<div class="column" id="firstcolumn">
-		<div class="box row1 col1">	
-			<h1>Clara Beyer</h1>	
-		</div>
-		
-		<div class="box row2 col1">
-			<div class="boxtitle">
-				<h2>contact me</h2>
-			</div>
-			<ul>
-				<li>phone: 703 473 3719</li>
-				<li>email: <a href="mailto:csb324@gmail.com">csb324@gmail.com</a></li>
-				<li>twitter: <a href="http://www.twitter.com/clarabellum">@clarabellum</a></li>
-			</ul>
-		</div>
-		
-		<div class="box row3 col1">
-			<div class="caption">
-				<h2>fun fact: I love nail art</h2>
-			</div>
-			<img src="nails.jpg" width="100%"/>
-		</div>
-	</div>
-
-	<div class="column" id="secondcolumn">
-
-		<div class="box row1 col2">
-			<div class="boxtitle">
-				<h2>accomplishments</h2>
-				<ul>
-
-					<li>Taught myself enough php, html, and css to build a new layout for <a href="http://post.browndailyherald.com">Post- Magazine's website.</a></li>
-
-					<li>Created multiple online viral sensations: <a href="http://www.washingtonpost.com/lifestyle/style/taylor-swifts-feminist-doppelganger-takes-off-on-twitter/2013/06/16/d8ac79e6-d691-11e2-a73e-826d299ff459_story.html">Feminist Taylor Swift</a> and <a href="http://newsfeed.time.com/2013/05/06/tumblr-of-the-week-cosmopolitan-magazine-for-marxists/">Cosmarxpolitan.</a></li>
-
-					<li>Outperformed <a href="http://www.insidepolitics.org/heard/heard32300.html">President George W. Bush</a> on the SATs... as a twelve year old.</li>
-					
-					<li>Owns (but cannot play) a ukelele.</li>
-				
-				</ul>
-			</div>
-		</div>
-
-		<div class="box row2 col2">
-			<!-- here is a picture of me in Friendsville, West Virginia :) -->
-		</div>
-
-		<div class="box row3 col2" id="carousel">
-			<div class="caption">
-				<h2>places i've lived</h2>
-			</div>
-			<ul>
-				<li><img src="alexandria.jpg"></li>
-				<li><img src="bern.jpg"></li>
-				<li><img src="providence.jpg"></li>
-			</ul>
-		</div>
-
-	</div>
-
-	<div class="column" id="thirdcolumn">
-
-		<div class="box row1 col3">
-			<div class="caption">
-				<h2>walking down the street</h2>
-			</div>
-			<img src="face.jpg" width="100%" />
-		</div>
-
-		<div class="box row2 col3">
-			<div class="boxtitle">
-				<h2>right now</h2>
-				<h3>Brown University</h3>
-				<p>Concentration: Linguistics</p>
-				<p>GPA: 3.7</p>
-				<h3>Social Media Assistant</h3>
-				<p>for Gail Sheehy, author of <a href="http://www.amazon.com/Passages-Predictable-Crises-Adult-Life/dp/0553271067">Passages</a></p>
-			</div>
-
-		</div>
-
-		<div class="box row3 col3">
-			<div class="boxtitle">
-				<h2>resources</h2>
-			</div>
-			<ul>
-				<li>
-					<a href="http://stackoverflow.com/questions/2648733/make-a-div-square-when-there-is-a-dynamically-changing-width-based-on-percenta">How to make perfectly square divs</a>
-				</li>
-				<li>
-					<a href="http://subtlepatterns.com/">Subtle Patterns</a>
-				</li>
-				<li>
-					<a href="http://www.my-html-codes.com/easy-jquery-carousel">This is what you get when you google "easy javascript image carousel"</a>
-				</li>
-			</ul>
-		</div>
-
-	</div>
-</div>
-
-<script>
-
-//make the boxes the right ratios etc
-$('.box').height($('#firstcolumn').width());
-
-//Setting a var for the carousel to work right
-var imgwidth = ($('#secondcolumn').width()) * -1;
-
-//The carousel function! 
-setInterval(function() {
-	$('#carousel ul').animate({
-		marginLeft:imgwidth
-	}, 
-	1000,
-	function() {
-		$(this).find("li:last").after($(this).find("li:first"));
-		$(this).css({
-			marginLeft:0
-		});
-	})
-}, 6000);
-
-</script>
+	<a href="http://clarabeyer.co">You're probably looking for this!</a>
 </body>
+
 </html>
